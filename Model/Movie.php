@@ -16,4 +16,15 @@ class Movie
         $this->duration = $_duration;
         $this->release_year = $_release_year;
     }
+
+    //METODI
+    public function getMovieTitle()
+    {
+        return $this->title;
+    }
+
+    public function getMovieInfo()
+    {
+        return $this->duration . ' ' . $this->release_year;
+    }
 }
