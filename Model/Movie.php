@@ -25,6 +25,6 @@ class Movie
 
     public function getMovieInfo()
     {
-        return $this->duration . ' ' . $this->release_year;
+        return 'Durata:' . $this->duration . '<br>Anno di rilascio:' . $this->release_year;
     }
 }
