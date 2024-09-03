@@ -16,10 +16,11 @@ require_once __DIR__ . '/data/db.php';
     <div class="container my-5">
         <div class="row">
             <?php foreach ($db as $movie): ?>
-                <div class="card" style="width: 18rem;">
+                <div class="card col-4">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $movie->getMovieTitle() ?></h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo $movie->getMovieInfo() ?></h6>
+                        <h6>Genre:<?php $movie->printMovieGenre() ?></h6>
                     </div>
                 </div>
             <?php endforeach; ?>
